@@ -41,16 +41,7 @@ export default function (kibana) {
             if (server.config().get(`${AppConstants.APP_NAME}.enabled`)) {
                 server.log(['info', 'status', `plugin:${AppConstants.APP_NAME}@${AppConstants.APP_VERSION}`], `Initializing`);
                 const { status } = server.plugins.elasticsearch;
-                server.register([
-                    {
-                        register: Blipp,
-                        options: {}
-                    }
-                ], (err) => {
-                    if (err) {
-                        server.log(['error', 'status', `plugin:${AppConstants.APP_NAME}@${AppConstants.APP_VERSION}`], err);
-                    }
-                });
+
                 initApi(server);
 
                 if (status) {
