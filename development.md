@@ -34,7 +34,7 @@ $ yarn start
 The plugin will work as a front end to our API 
 
 ## Running
-Follow the steps on the [Kibana Contributing Guide](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md#contributing-code) to setup your development environment. When you are done, you should have a `kibana` folder on the same level as the `plugin` and `api` folder.
+Starting from the root conveyor directoy follow the steps on the [Kibana Contributing Guide](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md#contributing-code) to setup your development environment. Once you've cloned the kibana repo, make sure you checkout the right version. As of writing this that is `v5.4.0`. When you are done, you should have a `kibana` folder on the same level as the `plugin` and `api` folder.
 
 ```
 $ cd plugin
